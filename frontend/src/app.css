@@ -1,0 +1,63 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(231, 231, 231);
+    height: 40vh;
+    width: 20vw;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.40);
+}
+
+.chat {
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.40);
+}
+
+.chat-content {
+    position: relative;
+    height: 85%;
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.typing-text {
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-footer {
+    margin: 2%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.received-msg {
+    background-color: #104720;
+    color: white;
+    border-radius: 15px 15px 15px 0;
+    padding: 10px;
+    margin: 6px 0;
+    clear: both;
+    float: left;
+}
+
+.me-msg {
+    background-color: #25b651;
+    border-radius: 15px 15px 0 15px;
+    padding: 10px;
+    margin: 6px 0;
+    clear: both;
+    float: right;
+}
