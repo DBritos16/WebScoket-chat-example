@@ -24,7 +24,9 @@
 
 .chat-content {
     position: relative;
-    height: 85%;
+    min-height: 85%;
+    max-height: 85%;
+    overflow-y: auto;
     margin: 2%;
     padding: 2%;
     border: 1px solid rgb(231, 231, 231);
@@ -32,7 +34,8 @@
 
 .typing-text {
     position: absolute;
-    bottom: 0;
+    left: 28%;
+    bottom: 200px;
 }
 
 .chat-footer {
