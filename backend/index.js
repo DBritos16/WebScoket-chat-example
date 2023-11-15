@@ -1,8 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import 'dotenv/config.js';
 import { createServer } from 'http';
 import { Server as WebSocketServer } from 'socket.io';
+import { connectDB } from './src/database/connection.js'
 
 const app = express();
 const server = createServer(app);
@@ -39,4 +41,7 @@ io.on('connection', (socket) => {
     })
 });
 
-server.listen(3000, () => console.log('Server running on port 3000'))
+server.listen(3000, () => {
+    connectDB();   
+    console.log('Server running on port 3000')
+})
